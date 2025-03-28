@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_shared_option_values",
+  "info": {
+    "displayName": "optionValue"
+  },
+  "options": {},
+  "attributes": {
+    "value": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

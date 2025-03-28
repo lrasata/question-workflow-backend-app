@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "questions",
+  "info": {
+    "singularName": "question",
+    "pluralName": "questions",
+    "displayName": "Question",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "questionId": {
+      "type": "uid"
+    },
+    "question": {
+      "type": "string",
+      "required": true
+    },
+    "options": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.option-value",
+      "required": true,
+      "max": 5,
+      "min": 2
+    },
+    "additionalText": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer",
+      "unique": true,
+      "required": true
+    },
+    "label": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
