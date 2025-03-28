@@ -2,7 +2,7 @@
 
 This is a project built with [Strapi](https://docs.strapi.io/). It allows admin users who have access to the Strapi Admin panel can define a collection of questions and possible answers. 
 
-This project works in conjunction with [question-workflow-app-frontend](https://github.com/lrasata/question-workflow-app) which presents the workflow questions to the end-user who is able to select its answers.
+This project works in conjunction with [question-workflow-app-frontend](https://github.com/lrasata/question-workflow-frontent-app) which presents the workflow questions to the end-user who is able to select its answers.
 
 
 ### Backend built with Strapi
