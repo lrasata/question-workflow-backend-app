@@ -13,19 +13,20 @@ const sanitizeAllValues = (data, sanitizeFn) => {
     );
 }
 
-const removeHTMLTags = (str: string) => {
+const removeHtmlTags = (str: string) => {
     if ((str === null) || (str === ''))
         return false;
     else
         str = str.toString();
 
-    // Regular expression to identify HTML tags in
-    // the input string. Replacing the identified
-    // HTML tag with a null string.
-    return str.replace(/(<([^>]+)>)/ig, '');
+    // Regular expression to identify HTML tags in the input string.
+    // Replacing the identified HTML tag with an empty string.
+    // Remove heading and trailing white spaces
+    return str.replace(/(<([^>]+)>)/ig, '').trim();
 }
 
-const sanitize = (data) => {
-    return sanitizeAllValues(data, (value: string) => removeHTMLTags(value) );
+export const sanitize = (data) => {
+    strapi.log.info('Request body is being sanitized');
+    return sanitizeAllValues(data, (value: string) => removeHtmlTags(value) );
 }
 
