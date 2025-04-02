@@ -51,6 +51,14 @@ npm run build
 yarn build
 ```
 
+### `deploy`
+
+This project is configured with `AWS S3 provider` as all assets of the Media library are stored in a `S3 bucket` on deployment.
+
+For testing purposes, this project was successfully deployed on AWS following the [step by step guide](https://strapi.io/integrations/aws) which provides instructions on how to integrate AWS with Strapi.
+The Strapi project was deployed on `AWS EC2 instance` inside a `AWS VPC`. The ec2 instance was connected to `AWS RDS Postgresql database`  and used `AWS S3` to host and serve images.
+
+
 ## 📚 Learn more
 
 - [Resource center](https://strapi.io/resource-center) - Strapi resource center.

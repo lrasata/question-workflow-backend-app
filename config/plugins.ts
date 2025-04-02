@@ -1,7 +1,7 @@
 export default ({ env }) => ({
     upload: {
         config: {
-            provider: 'aws-s3',
+            provider: 'aws-s3', // used as a storage on deployment.
             providerOptions: {
                 s3Options: {
                     accessKeyId: env('AWS_ACCESS_KEY_ID'),
